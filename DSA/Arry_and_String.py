@@ -15,3 +15,23 @@ print(A)
 #Accessing element given index i - o(1)
 print(A[2])
 
+
+#checking if array has an element - O(n)
+if 6 in A:
+    print(True)
+else:
+    print(False)
+
+# STrng
+#Append to end of string
+s= 'hello'
+b= s+' world'
+print(b)
+
+#checking if something is in string- O(n)
+if 'e' in s:
+    print(True)
+
+#Access positions- O(1)
+print(s[2])
+
