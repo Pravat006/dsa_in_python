@@ -27,6 +27,3 @@ print(sett) #{'c', 'e', 'b', 'a', 'd'}
 #Loop over items in set - O(n)
 for x in s:
     print(x)
-
-
-
