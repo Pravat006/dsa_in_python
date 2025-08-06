@@ -41,6 +41,9 @@ def heapsort(arr):
     return new_list
 
 res= heapsort([1,8,6,5,7,8,4,15,18,11])
+
+
+
 # print(res)
 
 # Heap push pop: Time O(log n)
@@ -60,25 +63,38 @@ for i in range(n):
     B[i]= -B[i]
 
 heapq.heapify(B)
-print(B)
+# print(B)
 
 
+#Build heap from scratch - Time: O(n log n)
+
+'''
+C=[-5,4,2,1,7,0,3]
+heap = []
+
+for x in C:
+    heapq.heappush(heap,x)
+    # print(heap, len(heap))
+'''
 
 
+# IMP
+# putting tuples of items on the heap
 
 
+D= [5,4,3,4,3,5,5,4]
+
+from collections import Counter
+
+counter = Counter(D)
+
+# print(counter)
+
+heap = []
+for k,v in counter.items():
+    heapq.heappush(heap,(v,k))
 
 
-
-
-
-
-
-
-
-
-
-
-
+print(heap)
 
 
