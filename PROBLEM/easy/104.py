@@ -1,0 +1,12 @@
+# 104. Maximum Depth of Binary Tree
+
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: Optional[TreeNode]
+        :rtype: int
+        """
+        if not root:
+            return None
+
+        return 1+max(self.maxDepth(root.left), self.maxDepth(root.right))
