@@ -66,14 +66,14 @@ def post_order(node):
 # Iterative Pre-Order Traversal (DFS) Time:O(n), Space: O(n)
 
 def pre_order_iterative(node):
-   stack = [node]
-   while stack:
-       node = stack.pop()
-       print(node)
-       if node.right:
-           stack.append(node.right)
-       if node.left:
-           stack.append(node.left)
+    stack = [node]
+    while stack:
+        node = stack.pop()
+        print(node)
+        if node.right:
+            stack.append(node.right)
+        if node.left:
+            stack.append(node.left)
 
 # pre_order_iterative(A)
 
