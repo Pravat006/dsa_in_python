@@ -9,4 +9,7 @@ def rev_str(text):
         rev+=text[i]
     return rev
 
+#  Time : O(n),  space: O(1)
+
+
 print(rev_str("hello"))
